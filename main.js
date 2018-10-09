@@ -24,19 +24,18 @@ const DEFAULT_TITLE = 'WalletShell CROATCoin Wallet';
 const DEFAULT_TRAY_TIP = 'La moneda alternativa dels catalans!';
 const PUBLIC_NODES_URL = 'https://raw.githubusercontent.com/croatapps/croatcoin-nodes-json/master/croatcoin-nodes.json';
 const FALLBACK_NODES = [
-    'public.turtlenode.io:11898',
-    'public.turtlenode.net:11898',
+    'wallet.croatpirineus.cat:46348',
 ];
 const DEFAULT_SETTINGS = {
     service_bin: DEFAULT_SERVICE_BIN,
     service_host: '127.0.0.1',
     service_port: 8070,
     service_password: crypto.randomBytes(32).toString('hex'),
-    daemon_host: 'public.turtlenode.io',
-    daemon_port: 11898,
+    daemon_host: 'wallet.croatpirineus.cat',
+    daemon_port: 46348,
     pubnodes_date: null,
     pubnodes_data: FALLBACK_NODES,
-    pubnodes_custom: ['127.0.0.1:11898'],
+    pubnodes_custom: ['127.0.0.1:46348'],
     tray_minimize: false,
     tray_close: false
 };
