@@ -17,7 +17,7 @@ log.transports.file.level = LOG_LEVEL;
 log.transports.file.maxSize = 5 * 1024 * 1024;
 
 const WALLETSHELL_VERSION = app.getVersion() || '0.3.2';
-const SERVICE_FILENAME =  (platform === 'win32' ? 'croat-service.exe' : 'croat-service' );
+const SERVICE_FILENAME =  (platform === 'win32' ? 'croatd.exe' : 'croat-service' );
 const SERVICE_OSDIR = (platform === 'win32' ? 'win' : (platform === 'darwin' ? 'osx' : 'lin'));
 const DEFAULT_SERVICE_BIN = path.join(process.resourcesPath,'bin', SERVICE_OSDIR, SERVICE_FILENAME);
 const DEFAULT_TITLE = 'WalletShell CROATCoin Wallet';
